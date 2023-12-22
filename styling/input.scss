@@ -1,0 +1,67 @@
+
+//sass --watch  styling/input.scss:output.css
+@import 'system/buttons.scss';
+@import 'system/typography.scss';
+@import 'variables.scss';
+@import 'components/contact/contact1.scss';
+@import 'components/hero/bgTextHero.scss';
+@import 'components/hero/hero1.scss';
+@import 'components/hero/hero2.scss';
+@import 'components/hero/hero3.scss';
+// @import 'components/imageGallery.scss';
+
+@import 'components/footer.scss';
+@import 'components/hamburger.scss';
+@import 'components/navbar/navbar.scss';
+@import 'components/sidebar';
+@import 'components/sideBar-btn-col';
+
+@import 'components/navbar/hamburgerNavbar.scss';
+@import 'components/navbar/hybridResponsiveNavbar.scss';
+@import 'components/switch.scss';
+
+@import 'layout/basic-flex-styling.scss';
+@import 'layout/col-right-side-bar.scss';
+@import 'layout/center-content.scss';
+@import 'layout/two-column.scss';
+@import 'layout/three-column.scss';
+@import 'system/buttons.scss';
+@import 'system/typography.scss';
+@import 'variables.scss';
+
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+  }
+
+  section {
+    padding: 5em 2em;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  strong {
+    font-weight: var(--fw-bold);
+  }
+
+  :focus {
+    outline: 3px solid var(--clr-primary);
+    outline-offset: 3px;
+  }
+
+
+  .section__title {
+    margin-bottom: 0.25em;
+  }

@@ -1,0 +1,52 @@
+/* Container for the section layout */
+.col-right-side-bar{
+    display: flex;
+    margin: 20px; /* Adjust margin as needed */
+    height: 24em;
+}
+
+.col-right-side-bar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+}
+
+/* Main content column */
+.col-right-side-bar> :first-child {
+    flex: 7; /* Takes 70% of the width */
+
+    background-color: #f2f2f2; /* Add your preferred background color */
+}
+
+/* Sidebar column */
+.col-right-side-bar > :nth-child(2) {
+    flex: 3; /* Takes 20% of the width */
+    // padding: 20px; /* Adjust padding as needed */
+    background-color: #ddd; /* Add your preferred background color */
+}
+
+/*
+<div class="col-right-side-bar">
+<div>
+
+</div>
+
+    <div class="sideBar-btn-col">
+          <div class="col-right-side-bar">
+            <div>
+                <img src="assets/placeholder.png">
+                <!-- Add your main content here -->
+            </div>
+
+                <div class="sideBar-btn-col">
+                    <button class="button button-outline" onmouseover="handleHover()">Button 1</button>
+                      <!-- more in the sideBar-btn-col styling-->
+                </div>
+                <!-- Add your sidebar content here -->
+
+        </div>
+    </div>
+    <!-- Add your sidebar content here -->
+
+</div>*/

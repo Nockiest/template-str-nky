@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Design HTML Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/materialize-css@1.0.0/dist/css/materialize.min.css">
+    <link  rel="stylesheet" href="output.css">
+</head>
+<body>
+    <header>
+         <div class="logo">
+           <img src="assets/placeholder.png" alt="" />
+         </div>
+         <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+       </button>
+        <nav class="ham-nav">
+           <ul class="nav__list">
+            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">My Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About me</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">My Work</a>
+            </li>
+          </ul>
+        </nav>
+        </header>
+
+        <section class="contact-section ">
+            <h2>Kontakt</h2>
+            <div class="contact-info  two-column">
+                <div class="map">
+                    <!-- Replace the iframe src with your Google Maps iframe code -->
+                    <iframe src=https://maps.app.goo.gl/WCRH375nY9NhcEAi9" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="contact-details">
+                    <p><strong>Address:</strong> 123 Main Street, Cityville, State, Zip Code</p>
+                    <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                    <p><strong>Email:</strong> info@example.com</p>
+                    <p><strong>Contact Person:</strong> John Doe</p>
+                    <button class="  button-outline">Kontaktovat</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="col-right-side-bar">
+            <div>
+                <img src="assets/placeholder.png">
+
+            </div>
+
+                <div class="sideBar-btn-col">
+                    <button class="button button-outline" onmouseover="handleHover(1)">Button 1</button>
+                    <button class="button  button-outline" onmouseover="handleHover(2)">Button 2</button>
+                    <button class="button  button-outline" onmouseover="handleHover(3)">Button 3</button>
+                    <button class="button  button-outline" onmouseover="handleHover(4)">Button 3</button>
+                    <button class="button  button-outline" onmouseover="handleHover(5)">Button 3</button>
+                </div>
+
+
+        </div>
+
+
+        <div class="photo-gallery">
+           <div class="photo-item">
+                <img src="assets/placeholder.png" alt="Image 1">
+            </div>
+            <div class="photo-item">
+                <img src="assets/placeholder.png" alt="Image 2">
+            </div>
+
+        </div>
+    </section>
+    <section class="sidebar1" style="height: 100px;">
+        <h2>Sidebar Title</h2>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+      </s>
+      <button class="button-disabled"><a href="#">Link 4</a></button>
+      <button class="button-disabled"><a href="#">Link 4</a></button>
+      <p>Exercitation exercitation occaecat nisi pariatur nisi anim irure sint dolore duis non duis anim id.</p>
+      <p>Exercitation exercitation occaecat nisi pariatur nisi anim irure sint dolore duis non duis anim id.</p>
+      <p>Exercitation exercitation occaecat nisi pariatur nisi anim irure sint dolore duis non duis anim id.</p>
+      <p>Exercitation exercitation occaecat nisi pariatur nisi anim irure sint dolore duis non duis anim id.</p>
+      <p>Exercitation exercitation occaecat nisi pariatur nisi anim irure sint dolore duis non duis anim id.</p>
+    </section>
+      <section>
+        <div class="switch-container">
+            <input type="checkbox" id="switch" class="switch-input">
+            <label for="switch" class="switch-label">
+                <div class="switch-slider"></div>
+            </label>
+        </div>
+
+        <!-- Larger Variant -->
+        <div class="switch-container large">
+            <input type="checkbox" id="switchLarge" class="switch-input">
+            <label for="switchLarge" class="switch-label">
+                <div class="switch-slider"></div>
+            </label>
+        </div>
+    </section>
+    <section>
+        <div class="card">
+            <h2>Card Section</h2>
+            <p>This is a card-like section with material design styles.</p>
+        </div>
+
+        <div class="card">
+            <h2>Form Section</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <button type="submit" class="button-primary waves-effect waves-light">Submit</button>
+                <button type="submit" class="button-secondary  waves-effect waves-light">Delete</button>
+            </form>
+        </div>
+
+        <button class="button-primary">Filled Button</button>
+
+        <button class="button-secondary">Secondary Button</button>
+        <button class="button-outline">Outline Button</button>
+        <button class="button-circle">Circle Button</button>
+        <button class="button-text">Text Button</button>
+        <button class="button-disabled" disabled>Disabled Button</button>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Váš Podnik. Všechna Práva Vyhrazena</p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/materialize-css@1.0.0/dist/js/materialize.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

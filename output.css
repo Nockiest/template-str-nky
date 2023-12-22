@@ -1,0 +1,1154 @@
+:root {
+  --btn-padding: 0.75rem 1.5rem;
+  --btn-lg-padding: 1rem 1.8rem;
+  --btn-radius: 0.25rem;
+  --btn-bg: var(--clr-primary);
+  --btn-primary-color: var(--clr-primary)
+  --btn-secondary-color: var( --clr-secondary)
+  --btn-tertiary-color: var( --clr-tertiary)
+  --btn-danger-color: var(--clr-danger)
+  --btn-hover-bg: var(--clr-primary);
+}
+
+.button-primary {
+  display: inline-block;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  text-decoration: none;
+  padding: var(--btn-padding);
+  cursor: pointer;
+  border: none;
+  border-radius: var(--btn-radius);
+  transition: background-color 0.1s ease, transform 200ms ease-in-out;
+  color: var(--clr-light);
+  background-color: var(--clr-primary);
+}
+.button-primary:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.button-primary:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+.button-secondary {
+  display: inline-block;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  text-decoration: none;
+  padding: var(--btn-padding);
+  cursor: pointer;
+  border: none;
+  border-radius: var(--btn-radius);
+  transition: background-color 0.1s ease, transform 200ms ease-in-out;
+  color: var(--clr-light);
+  background-color: var(--clr-secondary);
+}
+.button-secondary:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.button-secondary:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+.button-tertiary {
+  display: inline-block;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  text-decoration: none;
+  padding: var(--btn-padding);
+  cursor: pointer;
+  border: none;
+  border-radius: var(--btn-radius);
+  transition: background-color 0.1s ease, transform 200ms ease-in-out;
+  color: var(--clr-light);
+  background-color: var(--clr-light);
+  border: 2px solid var(--btn-tertiary-color);
+}
+.button-tertiary:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.button-tertiary:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+.button-outline {
+  display: inline-block;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  text-decoration: none;
+  padding: var(--btn-padding);
+  cursor: pointer;
+  border: none;
+  border-radius: var(--btn-radius);
+  transition: background-color 0.1s ease, transform 200ms ease-in-out;
+  color: var(--clr-light);
+  border: 2px solid var(--btn-primary-color);
+  color: var(--btn-secondary-color);
+  background-color: var(--clr-light);
+}
+.button-outline:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.button-outline:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+.button-circle {
+  display: inline-block;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  text-decoration: none;
+  padding: var(--btn-padding);
+  cursor: pointer;
+  border: none;
+  border-radius: var(--btn-radius);
+  transition: background-color 0.1s ease, transform 200ms ease-in-out;
+  color: var(--clr-light);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0;
+  background-color: var(--clr-primary);
+  color: var(--btn-color);
+}
+.button-circle:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.button-circle:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+.button-text {
+  display: inline-block;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  text-decoration: none;
+  padding: var(--btn-padding);
+  cursor: pointer;
+  border: none;
+  border-radius: var(--btn-radius);
+  transition: background-color 0.1s ease, transform 200ms ease-in-out;
+  color: var(--clr-light);
+  color: var(--clr-primary);
+}
+.button-text:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.button-text:hover {
+  background-color: var(--btn-hover-bg);
+}
+.button-text:hover {
+  text-decoration: underline;
+}
+
+.button-disabled {
+  display: inline-block;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  text-decoration: none;
+  padding: var(--btn-padding);
+  cursor: pointer;
+  border: none;
+  border-radius: var(--btn-radius);
+  transition: background-color 0.1s ease, transform 200ms ease-in-out;
+  color: var(--clr-light);
+  background-color: var(--clr-primary);
+  color: var(--btn-color);
+}
+.button-disabled:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.button-disabled:hover {
+  background-color: var(--btn-hover-bg);
+}
+.button-disabled:hover {
+  background-color: var(--clr-primary);
+  cursor: not-allowed;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: var(--lh);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh);
+  font-family: var(--ff-primary);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh);
+}
+
+h4 {
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh);
+}
+
+h5 {
+  font-size: var(--fs-h5);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh);
+}
+
+h6 {
+  font-size: var(--fs-h6);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh);
+}
+
+p {
+  font-size: var(--fs-body);
+  line-height: var(--lh);
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+}
+:root {
+  --fw-reg: 400;
+  --fw-bold: 700;
+  --ff-primary: "Montserrat", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --clr-primary: #0e68ef;
+  --clr-secondary: #ff0084;
+  --clr-ternary: #5dd9ff;
+  --clr-danger: #fe0c0c;
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --fw-bold: 700;
+  --fs-h1: 2.5rem;
+  --fs-h2: 2rem;
+  --fs-h3: 1.75rem;
+  --fs-h4: 1.5rem;
+  --fs-h5: 1.25rem;
+  --fs-h6: 1rem;
+  --fs-body: 1rem;
+  --lh: 1.5;
+  --switch-width: 60px;
+  --switch-height: 30px;
+  --switch-slider-size: 20px;
+  --switch-background: #ddd;
+  --switch-slider-color: var( --clr-primary);
+  --switch-slider-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  --form-input-padding: 0.5rem;
+  --form-input-border: 1px solid #ccc;
+  --form-input-radius: 0.25rem;
+  --card-bg: #fff;
+  --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --borderRadius: 4px ;
+}
+
+.contact-section {
+  background-color: var(--clr-light);
+  padding: 50px;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.map {
+  flex: 1;
+  margin-bottom: 20px;
+}
+.map iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+.contact-details {
+  flex: 1;
+  text-align: left;
+  max-width: 400px;
+}
+.contact-details p {
+  margin: 10px 0;
+}
+
+.bgTextHero {
+  position: relative;
+  height: 80vh;
+  background-image: url("assets/placeholder.png"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bgTextHero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Overlay for better readability */
+}
+.bgTextHero .hero-content {
+  z-index: 1; /* Ensures the content is above the background image */
+}
+
+.hero-1 {
+  background: linear-gradient(45deg, #3498db, #9b59b6);
+  color: #fff;
+  text-align: center;
+  padding: 100px;
+}
+.hero-1 .hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-2 {
+  background: url("assets/placeholder.png") center/cover no-repeat;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 100px;
+}
+.hero-2 .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.hero-2 .hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-3 {
+  position: relative;
+  color: #d72828;
+  background-color: brown;
+  text-align: center;
+  padding: 100px;
+}
+.hero-3 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-3 .hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+}
+
+.footer1 {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  padding: 100px;
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+}
+.footer1 .left-side {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 20px;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-nav a:hover {
+  color: var(--clr-primary);
+}
+
+.footer-copyright {
+  margin-bottom: 20px;
+}
+
+/*
+<footer class="footer1">
+
+  <div class='left-side'>
+    <!-- Navigation -->
+   <div class="footer-nav">
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+   <!-- Contact Form -->
+  <div class="contact-form">
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+  </div>
+
+
+  <!-- Copyright -->
+  <p class="footer-copyright">&copy; 2023 Your Business. All rights reserved.</p>
+
+
+</footer>
+*/
+.nav-toggle {
+  background: var(--clr-light);
+  user-select: none;
+  height: 3em;
+  width: 3em;
+  display: flex;
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+  background: var(--clr-primary);
+  user-select: none;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  background: var(--clr-primary);
+  width: 2em;
+  height: 4px;
+  border-radius: 1em;
+  transition: transform 250ms ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.hamburger::before {
+  top: 8px;
+}
+
+.hamburger::after {
+  bottom: 8px;
+}
+
+.sidebar1 {
+  overflow-y: scroll;
+}
+
+/* Style the custom scrollbar for WebKit browsers */
+.sidebar1::-webkit-scrollbar {
+  width: 12px;
+}
+
+.sidebar1::-webkit-scrollbar-thumb {
+  background-color: var(--clr-primary); /* Scrollbar thumb color */
+  border-radius: 6px; /* Rounded corners */
+}
+
+.sidebar1::-webkit-scrollbar-track {
+  background-color: var(--clr-secondary); /* Scrollbar track color */
+}
+
+/*
+  <section class="sidebar1" style="height: 100px;">
+  <section>
+  */
+.sideBar-btn-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  gap: 2px;
+}
+.sideBar-btn-col .button {
+  border: none;
+  padding: 24px 16px;
+  width: 100%;
+  border-radius: 1em;
+  transition: transform 0.3s ease-out;
+  cursor: pointer;
+}
+.sideBar-btn-col .button:hover {
+  transform: scale(1.1);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.ham-nav {
+  position: fixed;
+  display: flex;
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  align-items: center;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+}
+.ham-nav .nav__list {
+  list-style: none;
+  display: flex;
+  height: 100vh;
+  background-color: black;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.ham-nav .nav__link {
+  color: inherit;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h2);
+  text-decoration: none;
+}
+.ham-nav .nav__link:hover {
+  color: var(--clr-primary);
+}
+
+.nav-toggle {
+  padding: 0.5em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 2em;
+  top: 2em;
+  z-index: 1000;
+}
+
+.nav-open .nav {
+  transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+  position: fixed;
+}
+
+.nav-open .hamburger {
+  transform: rotate(0.625turn);
+}
+
+.nav-open .hamburger::before {
+  transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+  opacity: 0;
+}
+
+.responzive-nav {
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.responzive-nav .res-navbar-logo {
+  width: 100px; /* Set a fixed width instead of max-width */
+}
+.responzive-nav .res-navbar-logo img {
+  height: auto;
+}
+.responzive-nav .navbar-buttons {
+  display: flex;
+}
+.responzive-nav .navbar-buttons .nav-button {
+  background: none;
+  border: none;
+  color: #fff;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.responzive-nav .nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .responzive-nav .navbar-buttons {
+    display: none;
+  }
+  .responzive-nav .nav-toggle {
+    display: flex;
+  }
+}
+
+.switch-container {
+  position: relative;
+  padding-bottom: 20px; /* Add some spacing to accommodate larger slider */
+}
+
+.switch-input {
+  display: none;
+}
+
+.switch-label {
+  display: block;
+  position: relative;
+  width: var(--switch-width);
+  height: var(--switch-height);
+  background-color: var(--switch-background);
+  border-radius: var(--switch-height);
+  cursor: pointer;
+}
+
+.switch-slider {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: calc(var(--switch-slider-size)); /* Adjusted for slider size */
+  height: calc(var(--switch-slider-size)); /* Adjusted for slider size */
+  background-color: var(--switch-slider-color);
+  border-radius: 50%;
+  box-shadow: var(--switch-slider-shadow);
+  transition: transform 0.3s ease;
+}
+
+.switch-input:checked + .switch-label .switch-slider {
+  transform: translateX(calc(var(--switch-width) - var(--switch-slider-size))) translateY(-50%);
+  /* Adjusted for equal spacing on both sides */
+}
+
+/* Larger Variant */
+.switch-container.large .switch-label {
+  width: calc(var(--switch-width) + 10px); /* Adjusted for larger width */
+  height: calc(var(--switch-height) + 10px); /* Adjusted for larger height */
+}
+
+.switch-container.large .switch-slider {
+  width: calc(var(--switch-slider-size) + 10px); /* Adjusted for larger slider size */
+  height: calc(var(--switch-slider-size) + 10px); /* Adjusted for larger slider size */
+  transform: translateY(-50%); /* Center the slider vertically for the larger variant */
+}
+
+.display-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.display-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container for the section layout */
+.col-right-side-bar {
+  display: flex;
+  margin: 20px; /* Adjust margin as needed */
+  height: 24em;
+}
+
+.col-right-side-bar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+}
+
+/* Main content column */
+.col-right-side-bar > :first-child {
+  flex: 7; /* Takes 70% of the width */
+  background-color: #f2f2f2; /* Add your preferred background color */
+}
+
+/* Sidebar column */
+.col-right-side-bar > :nth-child(2) {
+  flex: 3; /* Takes 20% of the width */
+  background-color: #ddd; /* Add your preferred background color */
+}
+
+/*
+<div class="col-right-side-bar">
+<div>
+
+</div>
+
+    <div class="sideBar-btn-col">
+          <div class="col-right-side-bar">
+            <div>
+                <img src="assets/placeholder.png">
+                <!-- Add your main content here -->
+            </div>
+
+                <div class="sideBar-btn-col">
+                    <button class="button button-outline" onmouseover="handleHover()">Button 1</button>
+                      <!-- more in the sideBar-btn-col styling-->
+                </div>
+                <!-- Add your sidebar content here -->
+
+        </div>
+    </div>
+    <!-- Add your sidebar content here -->
+
+</div>*/
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.two-column {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.two-column > :first-child,
+.two-column > :last-child {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.two-column > :first-child {
+  order: 1; /* On smaller screens, move the first child (left column) on top */
+}
+
+@media only screen and (max-width: 600px) {
+  .two-column {
+    flex-direction: column; /* Switch to a single column on smaller screens */
+  }
+  .two-column > :first-child,
+  .two-column > :last-child {
+    order: 0; /* Reset the order for the default order on smaller screens */
+  }
+}
+.three-column {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.three-column > :first-child,
+.three-column > :last-child {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.three-column > :first-child {
+  order: 1; /* On smaller screens, move the first child (left column) on top */
+}
+
+.three-column > :nth-child(2) {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.three-column > :last-child {
+  order: 3; /* On smaller screens, move the last child (right column) to the bottom */
+}
+
+@media only screen and (max-width: 600px) {
+  .three-column {
+    flex-direction: column; /* Switch to a single column on smaller screens */
+  }
+  .three-column > :first-child,
+  .three-column > :nth-child(2),
+  .three-column > :last-child {
+    order: 0; /* Reset the order for the default order on smaller screens */
+  }
+}
+:root {
+  --btn-padding: 0.75rem 1.5rem;
+  --btn-lg-padding: 1rem 1.8rem;
+  --btn-radius: 0.25rem;
+  --btn-bg: var(--clr-primary);
+  --btn-primary-color: var(--clr-primary)
+  --btn-secondary-color: var( --clr-secondary)
+  --btn-tertiary-color: var( --clr-tertiary)
+  --btn-danger-color: var(--clr-danger)
+  --btn-hover-bg: var(--clr-primary);
+}
+
+.button-primary {
+  display: inline-block;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  text-decoration: none;
+  padding: var(--btn-padding);
+  cursor: pointer;
+  border: none;
+  border-radius: var(--btn-radius);
+  transition: background-color 0.1s ease, transform 200ms ease-in-out;
+  color: var(--clr-light);
+  background-color: var(--clr-primary);
+}
+.button-primary:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.button-primary:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+.button-secondary {
+  display: inline-block;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  text-decoration: none;
+  padding: var(--btn-padding);
+  cursor: pointer;
+  border: none;
+  border-radius: var(--btn-radius);
+  transition: background-color 0.1s ease, transform 200ms ease-in-out;
+  color: var(--clr-light);
+  background-color: var(--clr-secondary);
+}
+.button-secondary:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.button-secondary:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+.button-tertiary {
+  display: inline-block;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  text-decoration: none;
+  padding: var(--btn-padding);
+  cursor: pointer;
+  border: none;
+  border-radius: var(--btn-radius);
+  transition: background-color 0.1s ease, transform 200ms ease-in-out;
+  color: var(--clr-light);
+  background-color: var(--clr-light);
+  border: 2px solid var(--btn-tertiary-color);
+}
+.button-tertiary:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.button-tertiary:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+.button-outline {
+  display: inline-block;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  text-decoration: none;
+  padding: var(--btn-padding);
+  cursor: pointer;
+  border: none;
+  border-radius: var(--btn-radius);
+  transition: background-color 0.1s ease, transform 200ms ease-in-out;
+  color: var(--clr-light);
+  border: 2px solid var(--btn-primary-color);
+  color: var(--btn-secondary-color);
+  background-color: var(--clr-light);
+}
+.button-outline:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.button-outline:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+.button-circle {
+  display: inline-block;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  text-decoration: none;
+  padding: var(--btn-padding);
+  cursor: pointer;
+  border: none;
+  border-radius: var(--btn-radius);
+  transition: background-color 0.1s ease, transform 200ms ease-in-out;
+  color: var(--clr-light);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0;
+  background-color: var(--clr-primary);
+  color: var(--btn-color);
+}
+.button-circle:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.button-circle:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+.button-text {
+  display: inline-block;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  text-decoration: none;
+  padding: var(--btn-padding);
+  cursor: pointer;
+  border: none;
+  border-radius: var(--btn-radius);
+  transition: background-color 0.1s ease, transform 200ms ease-in-out;
+  color: var(--clr-light);
+  color: var(--clr-primary);
+}
+.button-text:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.button-text:hover {
+  background-color: var(--btn-hover-bg);
+}
+.button-text:hover {
+  text-decoration: underline;
+}
+
+.button-disabled {
+  display: inline-block;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  text-decoration: none;
+  padding: var(--btn-padding);
+  cursor: pointer;
+  border: none;
+  border-radius: var(--btn-radius);
+  transition: background-color 0.1s ease, transform 200ms ease-in-out;
+  color: var(--clr-light);
+  background-color: var(--clr-primary);
+  color: var(--btn-color);
+}
+.button-disabled:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.button-disabled:hover {
+  background-color: var(--btn-hover-bg);
+}
+.button-disabled:hover {
+  background-color: var(--clr-primary);
+  cursor: not-allowed;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: var(--lh);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh);
+  font-family: var(--ff-primary);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh);
+}
+
+h4 {
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh);
+}
+
+h5 {
+  font-size: var(--fs-h5);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh);
+}
+
+h6 {
+  font-size: var(--fs-h6);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh);
+}
+
+p {
+  font-size: var(--fs-body);
+  line-height: var(--lh);
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+}
+:root {
+  --fw-reg: 400;
+  --fw-bold: 700;
+  --ff-primary: "Montserrat", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --clr-primary: #0e68ef;
+  --clr-secondary: #ff0084;
+  --clr-ternary: #5dd9ff;
+  --clr-danger: #fe0c0c;
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --fw-bold: 700;
+  --fs-h1: 2.5rem;
+  --fs-h2: 2rem;
+  --fs-h3: 1.75rem;
+  --fs-h4: 1.5rem;
+  --fs-h5: 1.25rem;
+  --fs-h6: 1rem;
+  --fs-body: 1rem;
+  --lh: 1.5;
+  --switch-width: 60px;
+  --switch-height: 30px;
+  --switch-slider-size: 20px;
+  --switch-background: #ddd;
+  --switch-slider-color: var( --clr-primary);
+  --switch-slider-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  --form-input-padding: 0.5rem;
+  --form-input-border: 1px solid #ccc;
+  --form-input-radius: 0.25rem;
+  --card-bg: #fff;
+  --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --borderRadius: 4px ;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+strong {
+  font-weight: var(--fw-bold);
+}
+
+:focus {
+  outline: 3px solid var(--clr-primary);
+  outline-offset: 3px;
+}
+
+.section__title {
+  margin-bottom: 0.25em;
+}
+
+/*# sourceMappingURL=output.css.map */

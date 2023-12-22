@@ -1,0 +1,35 @@
+.contact-section {
+  background-color: var(--clr-light);
+  padding: 50px;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.map {
+  flex: 1;
+  margin-bottom: 20px;
+
+  iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+  }
+}
+
+.contact-details {
+  flex: 1;
+  text-align: left;
+  max-width: 400px;
+
+  p {
+    margin: 10px 0;
+  }
+}

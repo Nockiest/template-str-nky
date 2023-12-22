@@ -1,0 +1,72 @@
+.responzive-nav {
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .res-navbar-logo {
+        width: 100px; /* Set a fixed width instead of max-width */
+
+
+        img {
+
+            height: auto;
+        }
+    }
+
+    .navbar-buttons {
+        display: flex;
+
+        .nav-button {
+            background: none;
+            border: none;
+            color: #fff;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    }
+
+    .nav-toggle {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        .navbar-buttons {
+            display: none;
+        }
+
+        .nav-toggle {
+            display: flex;
+        }
+    }
+}
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     const navbarButtons = document.getElementById('navbarButtons');
+//     const hamburgerMenu = document.getElementById('hamburgerMenu');
+
+//     hamburgerMenu.addEventListener('click', function () {
+//         navbarButtons.style.display = (navbarButtons.style.display === 'flex') ? 'none' : 'flex';
+//     });
+// });
+
+// <nav class="responzive-nav">
+// <div class="navbar-logo">
+//     <img src="your-logo.png" alt="Logo">
+// </div>
+// <div class="navbar-buttons" id="navbarButtons">
+//     <button class="nav-button">Home</button>
+//     <button class="nav-button">About</button>
+//     <button class="nav-button">Services</button>
+//     <button class="nav-button">Contact</button>
+// </div>
+// <div class="hamburger-menu" id="hamburgerMenu">
+//     <div class="bar"></div>
+//     <div class="bar"></div>
+//     <div class="bar"></div>
+// </div>
+// </nav>
